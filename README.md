@@ -257,6 +257,3 @@ Other seeded routes:
 - Trusted responder accounts with stronger verification
 - Public SMS / radio ingest as additional raw signals
 
----
-
-Built as a focused 48-hour vertical slice: choose a route, collect signals, verify them, assess the route, explain the decision, and act.
