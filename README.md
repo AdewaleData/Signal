@@ -180,6 +180,17 @@ The repo includes `render.yaml`.
 
 If the web service builds before the API URL is known, trigger a manual **Clear build cache & deploy** on `signal-web`.
 
+### Vercel (frontend)
+
+Vercel hosts the Next.js app only. The API still needs Render or another host.
+
+1. Import `AdewaleData/Signal`.
+2. Set **Root Directory** to `frontend`.
+3. Add env var `BACKEND_URL` = your API URL, for example `https://signal-api.onrender.com`.
+4. Deploy.
+
+Push `main` so Vercel picks up the MapLibre build fix.
+
 Free web services sleep after idle time. The first request can take about a minute.
 
 The browser talks to the Next.js app. Next.js proxies `/api` to `signal-api`, so you do not need a public CORS setup for the main demo.
