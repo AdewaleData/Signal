@@ -35,7 +35,7 @@ export function RouteMap({
       style: STYLE,
       center: centerOf(primary, alternate),
       zoom: 14.2,
-      attributionControl: true,
+      attributionControl: { compact: true },
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     mapRef.current = map;
